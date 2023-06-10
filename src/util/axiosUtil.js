@@ -3,7 +3,7 @@ import environmentProperties from "../config/environmentProperties";
 
 export async function getAllEmployees() {
     try {
-        let response = await axios.get(`${environmentProperties.baseUrl}/data`);
+        let response = await axios.get(`${environmentProperties.baseUrl}`);
         return response.data;
     } catch (error) {
         console.log(error);
@@ -14,7 +14,7 @@ export async function getAllEmployees() {
 export async function updateEmployeeData(id, body) {
 
     try {
-        let response = await axios.put(`${environmentProperties.baseUrl}/data/${id}`, body);
+        let response = await axios.put(`${environmentProperties.baseUrl}/${id}`, body);
         if (response.status > 200 && response.status < 300) {
             return true;
         }
@@ -26,7 +26,7 @@ export async function updateEmployeeData(id, body) {
 
 export async function deleteEmployee(id) {
     try {
-        let response = await axios.delete(`${environmentProperties.baseUrl}/data/${id}`);
+        let response = await axios.delete(`${environmentProperties.baseUrl}/${id}`);
         if (response.status > 200 && response.status < 300) {
             return true;
         }
@@ -38,7 +38,7 @@ export async function deleteEmployee(id) {
 
 export async function addEmployee(data) {
     try {
-        let response = await axios.post(`${environmentProperties.baseUrl}/data/`, data);
+        let response = await axios.post(`${environmentProperties.baseUrl}/`, data);
         if (response.status > 200 && response.status < 300) {
             return true;
         }
