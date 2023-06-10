@@ -1,0 +1,98 @@
+.add-employee-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Adjust the height value as needed */
+}
+
+
+
+.add-employee-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.add-employee-form .p-float-label {
+  position: relative;
+  width: calc(50% - 10px);
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.add-employee-form .p-float-label .p-inputtext {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-employee-form .p-float-label label {
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  padding: 0 4px;
+}
+
+
+.add-employee-form .p-float-label .p-inputtext:valid label {
+  font-size: 12px;
+  transform: translateY(-25px) scale(0.75);
+}
+
+.add-employee-form .p-float-label .p-inputtext:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.add-employee-form .btn-add-employee,
+.add-employee-form .p-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add-employee-form .p-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.add-employee-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Align the heading to the center */
+  color: #333; /* Set the text color */
+  text-transform: uppercase; /* Convert the text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing for emphasis */
+}
+
+.add-employee-form .btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.add-employee-form .btn-container .p-button {
+  flex-basis: calc(50% - 5px);
+}
+
+.add-employee-form .btn-container .p-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.add-employee-form .bank-account-details {
+  width: 100%;
+  margin-bottom: 15px;
+}
