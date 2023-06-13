@@ -38,7 +38,7 @@ export async function deleteEmployee(id) {
 
 export async function addEmployee(data) {
     try {
-        let response = await axios.post(`${environmentProperties.baseUrl}/`, data);
+        let response = await axios.post(`${environmentProperties.baseUrl}`, data);
         if (response.status > 200 && response.status < 300) {
             return true;
         }
